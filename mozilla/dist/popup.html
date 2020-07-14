@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="spectre.min.css">
+    <script src="jquery-3.5.1.slim.min.js"></script>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+    <div class="app-title">Income Tax Credential Manager</div>
+    <div class="sec-client-list">
+        <div class="container">
+            <div class="columns">
+                <div class="column col-9">
+                    <div class="form-group">
+                        <input class="form-input" type="text" id="txtSearch" list="ddlClients" placeholder="Search client">
+                        <datalist id="ddlClients"></datalist>
+                    </div>
+                </div>
+                <div class="column col-3">
+                    <button class="btn btn-primary" id="btnPasteCredentials" style="width: 100%;" disabled>Paste</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec-client-form">
+        <div class="sec-client-form-title">Multiple Client [Import / Export]</div>
+        <div class="container">
+            <div class="columns mt-2">
+                <div class="column col-4">
+                    <button class="btn" id="btnExport" style="width: 100%;">Copy to Excel</button>
+                    <br>
+                    <!-- <div class="text-center">(export)</div> -->
+                </div>
+                <div class="column col-8">
+                    <input class="form-input" type="text" id="txtPasteData" placeholder="Paste Excel selection here...">
+                    <!-- <div class="text-center">(import)</div> -->
+                </div>
+            </div>
+        </div>
+        <div class="sec-client-form-title">Single Client [Add / Edit / Delete]</div>
+        <div class="container">
+            <div class="form-group">
+                <input class="form-input my-2" type="text" id="txtClientName" placeholder="Client Name">
+                <input class="form-input my-2" type="text" id="txtClientUser" placeholder="User ID">
+                <input class="form-input my-2" type="password" id="txtClientPass" placeholder="Password">
+            </div>
+            <div class="columns my-2">
+                <div class="column col-4">
+                    <button class="btn btn-success" id="btnSave" style="width: 100%;">Save</button>
+                </div>
+                <div class="column col-4">
+                    <button class="btn btn-primary" id="btnNewDelete" style="width: 100%;">New</button>
+                </div>
+                <div class="column col-4">
+                    <button class="btn btn-warning" id="btnCancel" style="width: 100%;">Cancel</button>
+                </div>
+            </div>
+            <div class="columns my-1">
+                <label id="lblMessage" class="column col-12 sec-client-form-message"> </label>
+            </div>
+            <div class="columns my-1">
+                <div class="column col-12 text-bold">
+                    Extension by:&nbsp;&nbsp;&nbsp;<a href="https://erpcloudanalysis.in/utility/income-tax-credential-manager">erpcloudanalysis.in</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <textarea id="txtCopyData" style="display: none;"></textarea>
+</body>
+
+</html>

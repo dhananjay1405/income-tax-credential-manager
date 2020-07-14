@@ -1,0 +1,57 @@
+html {
+    width: 420px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 240, 240);
+    color: black;
+    width: 420px;
+}
+
+.app-title {
+    text-align: center;
+    background-color: brown;
+    color: white;
+    font-size: 1.3em;
+    padding: 0.2rem 0;
+}
+
+.sec-client-list {
+    margin-top: 1rem;
+}
+
+.sec-client-form {
+    margin-top: 1.2rem;
+}
+
+.sec-client-form-title {
+    text-align: center;
+    margin: 0.2rem 0;
+    margin-top: 1.3rem;
+    color: rgb(99, 46, 46);
+    font-size: 1em;
+    font-weight: bold;
+
+}
+
+.sec-client-form-message {
+    font-size: 0.9em;
+}
+
+.btn.btn-danger {
+    background-color: red;
+    border-color: red;
+    color: white;
+}
+
+.btn.btn-warning {
+    background-color: orange;
+    border-color: orange;
+    color: white;
+}
+
+button.btn:disabled {
+    opacity: 0.3;
+}

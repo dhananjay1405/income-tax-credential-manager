@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "module": "ES2015",
+        "lib": [
+            "ES2018",
+            "DOM"
+        ],
+        "outDir": "../dist",
+        "rootDir": "./",
+        "removeComments": true,
+        "strict": true,
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "sourceMap": false
+    }
+}

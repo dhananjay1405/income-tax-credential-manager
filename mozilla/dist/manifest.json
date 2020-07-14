@@ -1,0 +1,35 @@
+{
+    "name": "Income Tax Credential Manager",
+    "version": "1.0",
+    "description": "Browser Extension for managing Income Tax website credentials with one-click copy-paste functionality",
+    "icons": {
+        "128": "icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "https://portal.incometaxindiaefiling.gov.in/*"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab",
+        "clipboardWrite"
+    ],
+    "manifest_version": 2,
+    "incognito": "not_allowed",
+    "browser_specific_settings": {
+        "gecko": {
+            "strict_min_version": "55.0"
+        }
+    }
+}
